@@ -13,7 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.0.3.1');
   api.use('mongo');
-  api.use('iron:router');
+  api.use('iron:router@1.0.7');
   api.addFiles('current-visitors-experts.js');
   api.addFiles('current-visitors-server.js', 'server');
   api.addFiles('current-visitors-common.js');
