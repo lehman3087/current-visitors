@@ -2,6 +2,12 @@
 
 CurrentVisitors is a Meteor package to monitor current numbers of visitors per pages assuming Iron Router.
 
+#Install
+
+```bash
+meteor add new3rs:current-visitors
+```
+
 ##Specifications
 
 This package exports a variable "currentVisitors".
