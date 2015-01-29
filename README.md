@@ -14,12 +14,14 @@ currentVisitors.visitors() is a function to return an object with path propertie
 
 ##Usage
 
+HTML
 ```html
 <template name="example">
 	Currently, total {{total}} visitors are staying in this site and {{visitors}} visitors are looking at this page.
 </template>
 ```
 
+JavaScript
 ```javascript
 Template.exammple.helpers({
 	total: function() {
