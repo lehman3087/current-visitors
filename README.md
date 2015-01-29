@@ -1,6 +1,16 @@
-#CurrentVisitor
+#CurrentVisitors
 
-CurrentVisitor is a Meteor package to monitor current numbers of visitors per pages assuming Iron Router.
+CurrentVisitors is a Meteor package to monitor current numbers of visitors per pages assuming Iron Router.
+
+##Specifications
+
+This package exports a variable "currentVisitors".
+
+The variable currentVisitors has three methods, total, of, visitors.
+
+currentVisitors.total() is a function to return a number of current total visitors. no arguments.
+currentVisitors.of(path) is a function to return a number of current visitors for path.
+currentVisitors.visitors() is a function to return an object with path properties and number values.
 
 ##Usage
 
