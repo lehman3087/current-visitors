@@ -7,7 +7,7 @@ updateVisitors = ->
     unset = CurrentVisitors.findOne() ? {}
     delete unset._id
     for id, path of connections
-        path = path.replace /\./g, '%2E'
+        path = path.replace /\./g, '%2E' # escape period for mongoDB
         if set[path]?
             set[path] += 1
         else
