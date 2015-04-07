@@ -1,6 +1,6 @@
 Package.describe({
   name: 'new3rs:current-visitors',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'monitoring each number of current visitors per page',
   // URL to the Git repository containing the source code for this package.
@@ -24,5 +24,5 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('new3rs:current-visitors');
-  api.addFiles('new3rs:current-visitors-tests.js');
+  api.addFiles('new3rs:current-visitors-tests.js', 'server');
 });

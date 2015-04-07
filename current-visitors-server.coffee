@@ -13,9 +13,12 @@ updateVisitors = ->
         else
             set[path] = 1
         delete unset[path]
-    CurrentVisitors.upsert {},
-        $set: set
-        $unset: unset
+    modifier = {}
+    if Object.keys(set).length > 0
+        modifier.$set = set
+    if Object.keys(unset).length > 0
+        modifier.$unset = unset
+    CurrentVisitors.upsert {}, modifier
     return
 
 Meteor.methods
